@@ -14,7 +14,7 @@ import pandas as pd
     
 def main():
     st.title('Air Passenger Analysis') 
-    df = pd.read_csv(R'C:\Users\Uzair-Ali\Downloads\4th Class Work (13-Aug-2022)/AirPassengers.csv')
+    df = pd.read_csv('AirPassengers.csv')
     #st.table(data)
     month = st.selectbox("Month", list(df['Month'].unique()))
     st.text(df[df['Month']==month])
